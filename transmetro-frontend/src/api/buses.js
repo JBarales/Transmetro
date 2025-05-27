@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3000/api/buses'
+  baseURL: 'https://transmetro.onrender.com/api/buses'
 });
 
 // Interceptor para token

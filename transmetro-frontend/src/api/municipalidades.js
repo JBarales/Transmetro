@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3000/api/municipalidades'
+  baseURL: 'https://transmetro.onrender.com/api/municipalidades'
 });
 
 API.interceptors.request.use((config) => {

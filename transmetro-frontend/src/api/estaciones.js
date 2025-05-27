@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3000/api/estaciones'
+  baseURL: 'https://transmetro.onrender.com/api/estaciones'
 });
 
 API.interceptors.request.use((config) => {
