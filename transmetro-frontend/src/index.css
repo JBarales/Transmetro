@@ -1,0 +1,256 @@
+body {
+  background: linear-gradient(to bottom right, #0a8754, #0077b6);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Solo centro el login */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-container h2 {
+  color: #0a8754;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0a8754;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0077b6;
+}
+
+.login-container p {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.admin-home {
+  padding: 3rem;
+}
+
+
+
+.admin-home-content {
+  background-color: white;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.admin-home-content h2 {
+  color: #0a8754;
+  margin-bottom: 1rem;
+}
+
+.admin-home-content p {
+  color: #333;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077b6; /* Azul principal */
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #90e0ef; /* Azul claro hover */
+}
+
+.navbar button {
+  background-color: #0a8754; /* Verde */
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #007f5f;
+}
+
+.admin-dashboard {
+  padding: 2rem;
+  color: white;
+}
+
+.empleado-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.empleado-form input,
+.empleado-form textarea,
+.empleado-form select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.empleado-form button {
+  grid-column: span 2;
+  padding: 0.75rem;
+  background-color: #0a8754;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: #ff4d4d;
+}
+
+.empleado-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.empleado-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn-crear {
+  background-color: white;
+  color: #0a8754;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-crear:hover {
+  background-color: #e0f7ed;
+}
+
+.tabla-empleados {
+  width: 100%;
+  background: white;
+  color: black;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-empleados th,
+.tabla-empleados td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla-empleados th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.tabla-empleados input,
+.tabla-empleados textarea,
+.tabla-empleados select {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tabla-empleados button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  background-color: #0a8754;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabla-empleados button:hover {
+  background-color: #0077b6;
+}
+
+.error-select {
+  border: 2px solid white;
+}
+
+.error-msg {
+  color: white;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
